@@ -35,7 +35,15 @@ It will then ask you for a brief description. No worries, you can use spaces her
 
 2 - The bot will ask you to enter the local folder path for your repository. This is the directory you’ve previously created; /Users/jojo/Projects/myproject1. You can hit enter to leave it empty if you have not created any. It will default to where the script is located. 
 
-3 – It will now ask you for your Github username. 
+3 – It will now ask you for your Github username.
+
+4 – Now it will ask you for your password. In this section, you will be pasting the Token you had generated from Github. 
+
+5 – After pasting the token, magic should have happened and your repo is now live. 
+Copy the link provided in the final output and paste it in your browser. 
+
+**Hooray!** You can now start working on your repo. 
+
 
 
 The SCRIPT
@@ -43,51 +51,61 @@ The SCRIPT
 
 ```js 
 
-#Create a Repon Automatically on Github
+#!/bin/bash
 
-# Make executable with chmod +x <<filename.sh>>
+#Create a Repo easily on Github from your Terminal.
+
+#Do not forget to M=make this file executable by using the following command: chmod +x <<filename.sh>>
 
 CURRENTDIR=${pwd}
 
-# step 1: name of the remote repo. Enter a SINGLE WORD ..or...separate with hyphens
-echo "What name do you want to give your remote repo?"
+#Step 0: Intro
+echo "Hi" $USER", I am BRS, the Best Bot Repo Script :)"
+echo "Let's get started"
+
+#Step 1: Name of the remote repo. Enter a single word or separate using hyphens.
+echo $USER", What's the name of your remote repo?"
 read REPO_NAME
 
-echo "Enter a repo description: "
+echo "Enter a brief description for your repo:"
 read DESCRIPTION
 
-
-# step 2:  the local project folder path
-echo "what is the absolute path to your local project directory?"
+#Step 2: Input the local folder path for your repository.
+echo "What is the best path to your local project directory?"
+echo "Don't panic if you don't have one, you can simply hit enter to leave it empty :)"
 read PROJECT_PATH
 
-echo "What is your github username?"
+#Step 3: Input your username.
+echo "So, what's your Github username?"
 read USERNAME
 
-# step 3 : go to path 
+#Step 4: Go to the local project path if any.
 cd "$PROJECT_PATH"
 
 
-# step 4: initialise the repo locally, create blank README, add and commit
+#Step 5: This will initialise the repo locally, create blank README, add and commit.
 git init
 touch README.MD
 git add README.MD
 git commit -m 'initial commit -setup with .sh script'
 
 
-# step 5 use github API to log the user in
+#Step 6: Use your API token to log in.
 curl -u ${USERNAME} https://api.github.com/user/repos -d "{\"name\": \"${REPO_NAME}\", \"description\": \"${DESCRIPTION}\"}"
 
-#  step 6 add the remote github repo to local repo and push
+#Step 7: Add the remote github repo to your local repo and push.
 git remote add origin https://github.com/${USERNAME}/${REPO_NAME}.git
 git push --set-upstream origin master
 
-# step 7 change to your project's root directory.
+#Step 8: This will change to your project's root directory.
 cd "$PROJECT_PATH"
 
-echo "Done. Go to https://github.com/$USERNAME/$REPO_NAME to see." 
-echo " *** You're now in your project root. ***" 
+echo "And ... BOOM! Done. Go to https://github.com/$USERNAME/$REPO_NAME to see your new repo :D Enjoy your Coding." $USER 
+echo " *** You're now in your project root. ***"
 
 ```
 ----------
 
+`This was created by Johann Maiga`
+
+**Thanks for checking it.**
