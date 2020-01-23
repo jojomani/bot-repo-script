@@ -29,17 +29,17 @@ In that same directory, type `pwd` to get the full path. Copy that as you will n
 
 You will be guided by the Bot-script through some input: 
 
-1 - This is where the bot will ask you to name your repository. Make sure to use a single word or separate the name using hyphens. 
+* This is where the bot will ask you to name your repository. Make sure to use a single word or separate the name using hyphens. 
 
 It will then ask you for a brief description. No worries, you can use spaces here. 
 
-2 - The bot will ask you to enter the local folder path for your repository. This is the directory you’ve previously created; /Users/jojo/Projects/myproject1. You can hit enter to leave it empty if you have not created any. It will default to where the script is located. 
+* The bot will ask you to enter the local folder path for your repository. This is the directory you’ve previously created; /Users/jojo/Projects/myproject1. You can hit enter to leave it empty if you have not created any. It will default to where the script is located. 
 
-3 – It will now ask you for your Github username.
+* It will now ask you for your Github username.
 
-4 – Now it will ask you for your password. In this section, you will be pasting the Token you had generated from Github. 
+* Now it will ask you for your password. In this section, you will be pasting the Token you had generated from Github. 
 
-5 – After pasting the token, magic should have happened and your repo is now live. 
+* After pasting the token, magic should have happened and your repo is now live. 
 Copy the link provided in the final output and paste it in your browser. 
 
 **Hooray!** You can now start working on your repo. 
