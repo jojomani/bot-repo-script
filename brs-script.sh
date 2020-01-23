@@ -1,5 +1,3 @@
-```js
-
 #!/bin/bash
 
 # Create a Repo easily on Github from your Terminal.
@@ -51,5 +49,3 @@ cd "$PROJECT_PATH"
 
 echo "And ... BOOM! Done. Go to https://github.com/$USERNAME/$REPO_NAME to see your new repo :D Enjoy your Coding." $USER 
 echo " *** You're now in your project root. ***"
-
-```
