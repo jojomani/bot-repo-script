@@ -1,4 +1,4 @@
-The BRS - Bot Repo Script
+The BRS - Bot Repo Script (for GitHub)
 ------------
 
 #### Instructions
