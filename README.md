@@ -64,7 +64,7 @@ The SCRIPT
 
 # Create a Repo easily on Github from your Terminal.
 
-# Do not forget to M=make this file executable by using the following command: chmod +x <<filename.sh>>
+# Do not forget to make this file executable by using the following command: chmod +x <<filename.sh>>
 
 CURRENTDIR=${pwd}
 
