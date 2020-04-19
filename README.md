@@ -28,7 +28,7 @@ It should return you something like: `/Users/jojo/Projects/myproject1`
 
 **6th Step** – **VERY IMPORTANT** - GitHub has discontinued password authentication to the API. You must now authenticate to the GitHub API using an API token. For more info visit: https://developer.github.com/v3/auth/#working-with-two-factor-authentication
 
-To create a token, head to your GitHub Developer settings. You will see an option for **Personal access tokens**. Geneerate a new token from there and make sure to copy it and save it as you will need it when running the bot script.
+To create a token, head to your GitHub Developer settings. You will see an option for **Personal access tokens**. Generate a new token from there and make sure to copy it and save it as you will need it when running the bot script.
 
 **7th Step** – Now let’s run this script! In your terminal window, type:
 
