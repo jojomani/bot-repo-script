@@ -32,7 +32,7 @@ To create a token, head to your GitHub Developer settings. You will see an optio
 
 **7th Step** – Now let’s run this script! In your terminal window, type:
 
- `~/home/scripts/bot-repo-script.sh`
+ `~/scripts/bot-repo-script.sh`
 
 You will be guided by the Bot-script through some input: 
 
